@@ -1,0 +1,4 @@
+import type { ReactNode,SVGProps } from "react";
+export type IconName="search"|"filter"|"database-check"|"products"|"info"|"chevron-down";
+const paths:Record<IconName,ReactNode>={search:<><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></>,filter:<path d="M4 6h16M7 12h10M10 18h4"/>,"database-check":<><ellipse cx="10" cy="6" rx="6" ry="3"/><path d="M4 6v8c0 1.7 2.7 3 6 3h1M16 6v5m-1 6 2 2 4-5"/></>,products:<><path d="M5 5h11l3 3v11H5z"/><path d="M8 2h8l3 3M8 9h8M8 13h8"/></>,info:<><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v.1"/></>,"chevron-down":<path d="m7 9 5 5 5-5"/>};
+export function TcIcon({name,size=18,...props}:{name:IconName;size?:number}&Omit<SVGProps<SVGSVGElement>,"name">){return <svg className="tc-icon" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false" {...props}>{paths[name]}</svg>}

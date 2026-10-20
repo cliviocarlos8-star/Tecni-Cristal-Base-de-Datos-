@@ -1,0 +1,9 @@
+import type {Item} from "./catalog-data";
+const C=(codigo:string,nombre:string,peso:string,tipologia:string):Item=>({codigo,nombre,color:"No especificado",categoria:"Perfiles",peso,imagen:`/kaiser/${codigo}.png?v=4`,tipologia});
+export const kaiserData:Item[]=[
+C("EK901","Marco perimetral leve","0,760 kg/m","Marcos corredizos"),C("EK1","Marco perimetral","0,891 kg/m","Marcos corredizos"),C("EK903","Hoja lateral para ventana","0,462 kg/m","Hojas corredizas"),C("EK902","Hoja horizontal de correr","0,440 kg/m","Hojas corredizas"),C("EK904","Hoja horizontal de cruce para ventana","0,450 kg/m","Hojas corredizas"),C("EK905","Mosquitero liviano","0,294 kg/m","Hojas corredizas"),
+C("EK6768","Marco de 75 mm para batiente de 24 mm","0,605 kg/m","Marcos batientes"),C("EK907","Marco para paño fijo","0,553 kg/m","Marcos fijos"),C("EK94","Columna divisoria reforzada","0,913 kg/m","Perfiles estructurales"),
+C("EK6313","Hoja vertical de puerta batiente de 24 mm","0,614 kg/m","Hojas batientes"),C("EK7976","Hoja horizontal de 33 mm","1,092 kg/m","Hojas batientes"),C("CK501","Hoja lateral de 36 mm","0,986 kg/m","Hojas batientes"),C("EK7977","Hoja lateral de 36 mm sin escuadra","0,977 kg/m","Hojas batientes"),
+C("EK8","Contravidrio recto de 15,6 mm","0,161 kg/m","Contravidrios"),C("EK44","Hoja horizontal de correr","0,830 kg/m","Hojas corredizas"),C("EK216","Marco proyectante y abatible","0,780 kg/m","Marcos abatibles"),C("EK217","Hoja para abatible","0,543 kg/m","Hojas abatibles"),
+C("EK215","Bisagra abatible y proyectante","0,338 kg/m","Complementarios"),C("CK543","Escuadra cantonera para armado","0,558 kg/m","Complementarios"),C("EK7975","Marco batiente para hoja de 36 mm","0,540 kg/m","Marcos batientes"),C("CK504","Premarco tubular con pestaña","0,441 kg/m","Premarcos"),C("CK503","Premarco tubular","0,375 kg/m","Premarcos")
+];
